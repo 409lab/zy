@@ -1,0 +1,420 @@
+Start model profiling, use_cuda: True.
+Model profiling with width mult 1.0x:
+Item                                                                                                    params           macs       nanosecs
+Total                                                                                               23,594,244  4,087,375,872     13,886,516
+Model profiling with width mult 0.75x:
+Item                                                                                                    params           macs       nanosecs
+Total                                                                                               23,594,244  2,321,321,472     17,382,904
+Model profiling with width mult 0.5x:
+Item                                                                                                    params           macs       nanosecs
+Total                                                                                               23,594,244  1,051,407,360     19,380,209
+Model profiling with width mult 0.25x:
+Item                                                                                                    params           macs       nanosecs
+Total                                                                                               23,594,244    277,633,536     17,876,359
+Start training.
+D:\anaconda3\envs\m68py36\lib\site-packages\torch\optim\lr_scheduler.py:82: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule.See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  "https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate", UserWarning)
+2015.5s train   1.0     1/50: loss: 2.305, top1_error: 0.633, top5_error: 0.317, lr: 0.010
+2015.6s train   0.75    1/50: loss: 2.298, top1_error: 0.635, top5_error: 0.318, lr: 0.010
+2015.7s train   0.5     1/50: loss: 2.290, top1_error: 0.638, top5_error: 0.320, lr: 0.010
+2015.7s train   0.25    1/50: loss: 2.313, top1_error: 0.650, top5_error: 0.330, lr: 0.010
+75.1s   val     1.0     1/50: loss: 1252.164, top1_error: 0.966, top5_error: 0.878
+75.1s   val     0.75    1/50: loss: 509.459, top1_error: 0.959, top5_error: 0.871
+75.1s   val     0.5     1/50: loss: 2199.173, top1_error: 0.964, top5_error: 0.893
+75.1s   val     0.25    1/50: loss: 45.506, top1_error: 0.964, top5_error: 0.861
+New best validation top1 error: 0.964
+2014.4s train   1.0     2/50: loss: 0.879, top1_error: 0.278, top5_error: 0.054, lr: 0.010
+2014.5s train   0.75    2/50: loss: 0.880, top1_error: 0.278, top5_error: 0.052, lr: 0.010
+2014.5s train   0.5     2/50: loss: 0.930, top1_error: 0.293, top5_error: 0.057, lr: 0.010
+2014.6s train   0.25    2/50: loss: 1.048, top1_error: 0.328, top5_error: 0.071, lr: 0.010
+71.4s   val     1.0     2/50: loss: 9.649, top1_error: 0.637, top5_error: 0.135
+71.4s   val     0.75    2/50: loss: 4.600, top1_error: 0.663, top5_error: 0.156
+71.4s   val     0.5     2/50: loss: 4.379, top1_error: 0.645, top5_error: 0.132
+71.4s   val     0.25    2/50: loss: 7.783, top1_error: 0.800, top5_error: 0.314
+New best validation top1 error: 0.800
+2026.3s train   1.0     3/50: loss: 0.298, top1_error: 0.099, top5_error: 0.005, lr: 0.010
+2026.3s train   0.75    3/50: loss: 0.313, top1_error: 0.103, top5_error: 0.005, lr: 0.010
+2026.4s train   0.5     3/50: loss: 0.345, top1_error: 0.114, top5_error: 0.007, lr: 0.010
+2026.4s train   0.25    3/50: loss: 0.436, top1_error: 0.143, top5_error: 0.011, lr: 0.010
+71.8s   val     1.0     3/50: loss: 1.562, top1_error: 0.221, top5_error: 0.019
+71.8s   val     0.75    3/50: loss: 1.094, top1_error: 0.250, top5_error: 0.012
+71.8s   val     0.5     3/50: loss: 1.129, top1_error: 0.261, top5_error: 0.016
+71.8s   val     0.25    3/50: loss: 1.141, top1_error: 0.288, top5_error: 0.011
+New best validation top1 error: 0.288
+2023.0s train   1.0     4/50: loss: 0.137, top1_error: 0.043, top5_error: 0.001, lr: 0.010
+2023.1s train   0.75    4/50: loss: 0.143, top1_error: 0.045, top5_error: 0.001, lr: 0.010
+2023.2s train   0.5     4/50: loss: 0.166, top1_error: 0.053, top5_error: 0.001, lr: 0.010
+2023.2s train   0.25    4/50: loss: 0.227, top1_error: 0.073, top5_error: 0.003, lr: 0.010
+71.5s   val     1.0     4/50: loss: 5.186, top1_error: 0.120, top5_error: 0.042
+71.5s   val     0.75    4/50: loss: 6.315, top1_error: 0.127, top5_error: 0.046
+71.5s   val     0.5     4/50: loss: 2.913, top1_error: 0.144, top5_error: 0.041
+71.5s   val     0.25    4/50: loss: 2.988, top1_error: 0.198, top5_error: 0.051
+New best validation top1 error: 0.198
+2029.4s train   1.0     5/50: loss: 0.085, top1_error: 0.025, top5_error: 0.001, lr: 0.010
+2029.5s train   0.75    5/50: loss: 0.087, top1_error: 0.026, top5_error: 0.001, lr: 0.010
+2029.5s train   0.5     5/50: loss: 0.100, top1_error: 0.030, top5_error: 0.001, lr: 0.010
+2029.5s train   0.25    5/50: loss: 0.132, top1_error: 0.040, top5_error: 0.001, lr: 0.010
+71.5s   val     1.0     5/50: loss: 2.999, top1_error: 0.330, top5_error: 0.018
+71.5s   val     0.75    5/50: loss: 2.374, top1_error: 0.327, top5_error: 0.015
+71.5s   val     0.5     5/50: loss: 2.046, top1_error: 0.327, top5_error: 0.005
+71.5s   val     0.25    5/50: loss: 2.433, top1_error: 0.350, top5_error: 0.017
+2028.1s train   1.0     6/50: loss: 0.065, top1_error: 0.016, top5_error: 0.001, lr: 0.010
+2028.2s train   0.75    6/50: loss: 0.065, top1_error: 0.017, top5_error: 0.001, lr: 0.010
+2028.3s train   0.5     6/50: loss: 0.069, top1_error: 0.019, top5_error: 0.001, lr: 0.010
+2028.3s train   0.25    6/50: loss: 0.090, top1_error: 0.027, top5_error: 0.001, lr: 0.010
+71.3s   val     1.0     6/50: loss: 21.776, top1_error: 0.969, top5_error: 0.885
+71.3s   val     0.75    6/50: loss: 19.297, top1_error: 0.906, top5_error: 0.701
+71.3s   val     0.5     6/50: loss: 11.925, top1_error: 0.837, top5_error: 0.583
+71.3s   val     0.25    6/50: loss: 11.876, top1_error: 0.838, top5_error: 0.548
+2027.7s train   1.0     7/50: loss: 0.132, top1_error: 0.038, top5_error: 0.003, lr: 0.010
+2027.7s train   0.75    7/50: loss: 0.118, top1_error: 0.034, top5_error: 0.002, lr: 0.010
+2027.8s train   0.5     7/50: loss: 0.104, top1_error: 0.031, top5_error: 0.002, lr: 0.010
+2027.9s train   0.25    7/50: loss: 0.107, top1_error: 0.032, top5_error: 0.001, lr: 0.010
+71.7s   val     1.0     7/50: loss: 0.801, top1_error: 0.175, top5_error: 0.004
+71.7s   val     0.75    7/50: loss: 0.961, top1_error: 0.198, top5_error: 0.004
+71.7s   val     0.5     7/50: loss: 0.853, top1_error: 0.175, top5_error: 0.003
+71.7s   val     0.25    7/50: loss: 1.735, top1_error: 0.309, top5_error: 0.020
+2028.1s train   1.0     8/50: loss: 0.043, top1_error: 0.013, top5_error: 0.000, lr: 0.010
+2028.1s train   0.75    8/50: loss: 0.044, top1_error: 0.013, top5_error: 0.000, lr: 0.010
+2028.2s train   0.5     8/50: loss: 0.045, top1_error: 0.013, top5_error: 0.000, lr: 0.010
+2028.2s train   0.25    8/50: loss: 0.051, top1_error: 0.015, top5_error: 0.000, lr: 0.010
+71.2s   val     1.0     8/50: loss: 14.570, top1_error: 0.873, top5_error: 0.672
+71.2s   val     0.75    8/50: loss: 14.637, top1_error: 0.883, top5_error: 0.683
+71.2s   val     0.5     8/50: loss: 11.586, top1_error: 0.701, top5_error: 0.458
+71.2s   val     0.25    8/50: loss: 4.443, top1_error: 0.533, top5_error: 0.219
+2023.2s train   1.0     9/50: loss: 0.078, top1_error: 0.021, top5_error: 0.002, lr: 0.010
+2023.2s train   0.75    9/50: loss: 0.080, top1_error: 0.021, top5_error: 0.001, lr: 0.010
+2023.3s train   0.5     9/50: loss: 0.077, top1_error: 0.021, top5_error: 0.001, lr: 0.010
+2023.4s train   0.25    9/50: loss: 0.066, top1_error: 0.018, top5_error: 0.001, lr: 0.010
+71.7s   val     1.0     9/50: loss: 0.830, top1_error: 0.117, top5_error: 0.008
+71.7s   val     0.75    9/50: loss: 0.512, top1_error: 0.112, top5_error: 0.002
+71.7s   val     0.5     9/50: loss: 0.855, top1_error: 0.174, top5_error: 0.004
+71.7s   val     0.25    9/50: loss: 1.749, top1_error: 0.305, top5_error: 0.022
+2021.2s train   1.0     10/50: loss: 0.032, top1_error: 0.008, top5_error: 0.000, lr: 0.010
+2021.2s train   0.75    10/50: loss: 0.032, top1_error: 0.008, top5_error: 0.000, lr: 0.010
+2021.3s train   0.5     10/50: loss: 0.036, top1_error: 0.010, top5_error: 0.000, lr: 0.010
+2021.3s train   0.25    10/50: loss: 0.037, top1_error: 0.010, top5_error: 0.000, lr: 0.010
+71.3s   val     1.0     10/50: loss: 11.605, top1_error: 0.737, top5_error: 0.376
+71.3s   val     0.75    10/50: loss: 10.955, top1_error: 0.729, top5_error: 0.371
+71.3s   val     0.5     10/50: loss: 11.825, top1_error: 0.748, top5_error: 0.372
+71.3s   val     0.25    10/50: loss: 11.494, top1_error: 0.796, top5_error: 0.341
+2015.2s train   1.0     11/50: loss: 0.024, top1_error: 0.007, top5_error: 0.000, lr: 0.010
+2015.2s train   0.75    11/50: loss: 0.025, top1_error: 0.007, top5_error: 0.000, lr: 0.010
+2015.3s train   0.5     11/50: loss: 0.048, top1_error: 0.014, top5_error: 0.000, lr: 0.010
+2015.3s train   0.25    11/50: loss: 0.033, top1_error: 0.010, top5_error: 0.000, lr: 0.010
+71.5s   val     1.0     11/50: loss: 0.151, top1_error: 0.013, top5_error: 0.006
+71.5s   val     0.75    11/50: loss: 0.117, top1_error: 0.010, top5_error: 0.005
+71.5s   val     0.5     11/50: loss: 0.013, top1_error: 0.004, top5_error: 0.000
+71.5s   val     0.25    11/50: loss: 0.132, top1_error: 0.011, top5_error: 0.006
+New best validation top1 error: 0.011
+2018.8s train   1.0     12/50: loss: 0.016, top1_error: 0.004, top5_error: 0.000, lr: 0.010
+2018.8s train   0.75    12/50: loss: 0.016, top1_error: 0.004, top5_error: 0.000, lr: 0.010
+2018.9s train   0.5     12/50: loss: 0.018, top1_error: 0.004, top5_error: 0.000, lr: 0.010
+2019.0s train   0.25    12/50: loss: 0.018, top1_error: 0.004, top5_error: 0.000, lr: 0.010
+71.1s   val     1.0     12/50: loss: 8.257, top1_error: 0.562, top5_error: 0.234
+71.1s   val     0.75    12/50: loss: 8.056, top1_error: 0.572, top5_error: 0.231
+71.1s   val     0.5     12/50: loss: 7.960, top1_error: 0.579, top5_error: 0.243
+71.1s   val     0.25    12/50: loss: 7.013, top1_error: 0.602, top5_error: 0.249
+2018.7s train   1.0     13/50: loss: 0.026, top1_error: 0.006, top5_error: 0.000, lr: 0.010
+2018.7s train   0.75    13/50: loss: 0.026, top1_error: 0.006, top5_error: 0.000, lr: 0.010
+2018.8s train   0.5     13/50: loss: 0.033, top1_error: 0.008, top5_error: 0.000, lr: 0.010
+2018.8s train   0.25    13/50: loss: 0.037, top1_error: 0.009, top5_error: 0.001, lr: 0.010
+71.8s   val     1.0     13/50: loss: 0.906, top1_error: 0.158, top5_error: 0.005
+71.8s   val     0.75    13/50: loss: 0.929, top1_error: 0.168, top5_error: 0.003
+71.8s   val     0.5     13/50: loss: 1.448, top1_error: 0.225, top5_error: 0.000
+71.8s   val     0.25    13/50: loss: 1.001, top1_error: 0.189, top5_error: 0.005
+2020.9s train   1.0     14/50: loss: 0.019, top1_error: 0.005, top5_error: 0.000, lr: 0.010
+2021.0s train   0.75    14/50: loss: 0.018, top1_error: 0.004, top5_error: 0.000, lr: 0.010
+2021.0s train   0.5     14/50: loss: 0.022, top1_error: 0.005, top5_error: 0.000, lr: 0.010
+2021.1s train   0.25    14/50: loss: 0.022, top1_error: 0.006, top5_error: 0.000, lr: 0.010
+71.3s   val     1.0     14/50: loss: 0.503, top1_error: 0.067, top5_error: 0.015
+71.3s   val     0.75    14/50: loss: 0.573, top1_error: 0.068, top5_error: 0.018
+71.3s   val     0.5     14/50: loss: 0.532, top1_error: 0.076, top5_error: 0.018
+71.3s   val     0.25    14/50: loss: 1.422, top1_error: 0.112, top5_error: 0.031
+2025.4s train   1.0     15/50: loss: 0.023, top1_error: 0.004, top5_error: 0.000, lr: 0.010
+2025.4s train   0.75    15/50: loss: 0.022, top1_error: 0.004, top5_error: 0.000, lr: 0.010
+2025.5s train   0.5     15/50: loss: 0.030, top1_error: 0.006, top5_error: 0.001, lr: 0.010
+2025.6s train   0.25    15/50: loss: 0.030, top1_error: 0.006, top5_error: 0.000, lr: 0.010
+71.7s   val     1.0     15/50: loss: 0.371, top1_error: 0.090, top5_error: 0.001
+71.7s   val     0.75    15/50: loss: 0.293, top1_error: 0.077, top5_error: 0.001
+71.7s   val     0.5     15/50: loss: 0.626, top1_error: 0.146, top5_error: 0.002
+71.8s   val     0.25    15/50: loss: 0.749, top1_error: 0.142, top5_error: 0.009
+2028.5s train   1.0     16/50: loss: 0.024, top1_error: 0.005, top5_error: 0.000, lr: 0.010
+2028.5s train   0.75    16/50: loss: 0.024, top1_error: 0.005, top5_error: 0.000, lr: 0.010
+2028.6s train   0.5     16/50: loss: 0.032, top1_error: 0.008, top5_error: 0.000, lr: 0.010
+2028.6s train   0.25    16/50: loss: 0.033, top1_error: 0.008, top5_error: 0.000, lr: 0.010
+71.2s   val     1.0     16/50: loss: 0.483, top1_error: 0.099, top5_error: 0.002
+71.3s   val     0.75    16/50: loss: 0.469, top1_error: 0.097, top5_error: 0.002
+71.3s   val     0.5     16/50: loss: 0.593, top1_error: 0.118, top5_error: 0.003
+71.3s   val     0.25    16/50: loss: 0.623, top1_error: 0.117, top5_error: 0.009
+2026.3s train   1.0     17/50: loss: 0.019, top1_error: 0.004, top5_error: 0.000, lr: 0.010
+2026.3s train   0.75    17/50: loss: 0.020, top1_error: 0.005, top5_error: 0.000, lr: 0.010
+2026.4s train   0.5     17/50: loss: 0.024, top1_error: 0.006, top5_error: 0.000, lr: 0.010
+2026.5s train   0.25    17/50: loss: 0.023, top1_error: 0.005, top5_error: 0.000, lr: 0.010
+71.5s   val     1.0     17/50: loss: 0.267, top1_error: 0.050, top5_error: 0.004
+71.5s   val     0.75    17/50: loss: 0.204, top1_error: 0.045, top5_error: 0.000
+71.5s   val     0.5     17/50: loss: 0.204, top1_error: 0.046, top5_error: 0.000
+71.5s   val     0.25    17/50: loss: 0.464, top1_error: 0.070, top5_error: 0.006
+2020.6s train   1.0     18/50: loss: 0.020, top1_error: 0.005, top5_error: 0.000, lr: 0.010
+2020.7s train   0.75    18/50: loss: 0.020, top1_error: 0.005, top5_error: 0.000, lr: 0.010
+2020.7s train   0.5     18/50: loss: 0.021, top1_error: 0.006, top5_error: 0.000, lr: 0.010
+2020.8s train   0.25    18/50: loss: 0.025, top1_error: 0.007, top5_error: 0.000, lr: 0.010
+71.3s   val     1.0     18/50: loss: 0.182, top1_error: 0.027, top5_error: 0.003
+71.3s   val     0.75    18/50: loss: 0.101, top1_error: 0.020, top5_error: 0.001
+71.3s   val     0.5     18/50: loss: 0.101, top1_error: 0.022, top5_error: 0.002
+71.3s   val     0.25    18/50: loss: 0.070, top1_error: 0.014, top5_error: 0.001
+2022.6s train   1.0     19/50: loss: 0.015, top1_error: 0.003, top5_error: 0.000, lr: 0.010
+2022.6s train   0.75    19/50: loss: 0.014, top1_error: 0.003, top5_error: 0.000, lr: 0.010
+2022.7s train   0.5     19/50: loss: 0.015, top1_error: 0.004, top5_error: 0.000, lr: 0.010
+2022.7s train   0.25    19/50: loss: 0.014, top1_error: 0.003, top5_error: 0.000, lr: 0.010
+71.9s   val     1.0     19/50: loss: 0.457, top1_error: 0.073, top5_error: 0.003
+71.9s   val     0.75    19/50: loss: 0.345, top1_error: 0.073, top5_error: 0.001
+71.9s   val     0.5     19/50: loss: 0.349, top1_error: 0.078, top5_error: 0.001
+71.9s   val     0.25    19/50: loss: 0.629, top1_error: 0.144, top5_error: 0.002
+2024.7s train   1.0     20/50: loss: 0.024, top1_error: 0.005, top5_error: 0.000, lr: 0.010
+2024.8s train   0.75    20/50: loss: 0.027, top1_error: 0.005, top5_error: 0.000, lr: 0.010
+2024.8s train   0.5     20/50: loss: 0.034, top1_error: 0.007, top5_error: 0.000, lr: 0.010
+2024.9s train   0.25    20/50: loss: 0.036, top1_error: 0.009, top5_error: 0.000, lr: 0.010
+71.3s   val     1.0     20/50: loss: 1.176, top1_error: 0.179, top5_error: 0.007
+71.3s   val     0.75    20/50: loss: 1.196, top1_error: 0.186, top5_error: 0.006
+71.3s   val     0.5     20/50: loss: 1.082, top1_error: 0.183, top5_error: 0.003
+71.3s   val     0.25    20/50: loss: 0.999, top1_error: 0.190, top5_error: 0.008
+2027.4s train   1.0     21/50: loss: 0.020, top1_error: 0.005, top5_error: 0.000, lr: 0.010
+2027.5s train   0.75    21/50: loss: 0.020, top1_error: 0.005, top5_error: 0.000, lr: 0.010
+2027.6s train   0.5     21/50: loss: 0.021, top1_error: 0.005, top5_error: 0.000, lr: 0.010
+2027.6s train   0.25    21/50: loss: 0.024, top1_error: 0.006, top5_error: 0.000, lr: 0.010
+71.7s   val     1.0     21/50: loss: 4.472, top1_error: 0.213, top5_error: 0.032
+71.7s   val     0.75    21/50: loss: 3.084, top1_error: 0.212, top5_error: 0.030
+71.7s   val     0.5     21/50: loss: 1.156, top1_error: 0.209, top5_error: 0.016
+71.7s   val     0.25    21/50: loss: 1.183, top1_error: 0.177, top5_error: 0.020
+2026.4s train   1.0     22/50: loss: 0.025, top1_error: 0.005, top5_error: 0.000, lr: 0.010
+2026.5s train   0.75    22/50: loss: 0.023, top1_error: 0.005, top5_error: 0.000, lr: 0.010
+2026.5s train   0.5     22/50: loss: 0.025, top1_error: 0.005, top5_error: 0.000, lr: 0.010
+2026.6s train   0.25    22/50: loss: 0.025, top1_error: 0.005, top5_error: 0.000, lr: 0.010
+71.5s   val     1.0     22/50: loss: 6.843, top1_error: 0.549, top5_error: 0.166
+71.5s   val     0.75    22/50: loss: 6.140, top1_error: 0.560, top5_error: 0.166
+71.5s   val     0.5     22/50: loss: 6.543, top1_error: 0.575, top5_error: 0.168
+71.5s   val     0.25    22/50: loss: 6.142, top1_error: 0.584, top5_error: 0.181
+2026.4s train   1.0     23/50: loss: 0.023, top1_error: 0.005, top5_error: 0.000, lr: 0.010
+2026.4s train   0.75    23/50: loss: 0.024, top1_error: 0.006, top5_error: 0.000, lr: 0.010
+2026.5s train   0.5     23/50: loss: 0.025, top1_error: 0.006, top5_error: 0.000, lr: 0.010
+2026.6s train   0.25    23/50: loss: 0.026, top1_error: 0.006, top5_error: 0.000, lr: 0.010
+71.7s   val     1.0     23/50: loss: 0.662, top1_error: 0.091, top5_error: 0.012
+71.7s   val     0.75    23/50: loss: 0.664, top1_error: 0.109, top5_error: 0.010
+71.7s   val     0.5     23/50: loss: 0.566, top1_error: 0.121, top5_error: 0.007
+71.8s   val     0.25    23/50: loss: 0.554, top1_error: 0.118, top5_error: 0.008
+2026.8s train   1.0     24/50: loss: 0.029, top1_error: 0.007, top5_error: 0.000, lr: 0.010
+2026.9s train   0.75    24/50: loss: 0.030, top1_error: 0.008, top5_error: 0.000, lr: 0.010
+2027.0s train   0.5     24/50: loss: 0.026, top1_error: 0.007, top5_error: 0.000, lr: 0.010
+2027.0s train   0.25    24/50: loss: 0.027, top1_error: 0.007, top5_error: 0.000, lr: 0.010
+71.6s   val     1.0     24/50: loss: 0.832, top1_error: 0.095, top5_error: 0.014
+71.6s   val     0.75    24/50: loss: 0.478, top1_error: 0.090, top5_error: 0.009
+71.7s   val     0.5     24/50: loss: 0.392, top1_error: 0.098, top5_error: 0.002
+71.7s   val     0.25    24/50: loss: 0.488, top1_error: 0.123, top5_error: 0.004
+2028.1s train   1.0     25/50: loss: 0.021, top1_error: 0.005, top5_error: 0.000, lr: 0.010
+2028.2s train   0.75    25/50: loss: 0.018, top1_error: 0.004, top5_error: 0.000, lr: 0.010
+2028.2s train   0.5     25/50: loss: 0.017, top1_error: 0.004, top5_error: 0.000, lr: 0.010
+2028.3s train   0.25    25/50: loss: 0.024, top1_error: 0.006, top5_error: 0.000, lr: 0.010
+71.8s   val     1.0     25/50: loss: 1.155, top1_error: 0.222, top5_error: 0.017
+71.8s   val     0.75    25/50: loss: 1.236, top1_error: 0.233, top5_error: 0.015
+71.8s   val     0.5     25/50: loss: 1.121, top1_error: 0.215, top5_error: 0.013
+71.8s   val     0.25    25/50: loss: 1.099, top1_error: 0.224, top5_error: 0.016
+2027.2s train   1.0     26/50: loss: 0.018, top1_error: 0.004, top5_error: 0.000, lr: 0.010
+2027.3s train   0.75    26/50: loss: 0.017, top1_error: 0.004, top5_error: 0.000, lr: 0.010
+2027.4s train   0.5     26/50: loss: 0.016, top1_error: 0.004, top5_error: 0.000, lr: 0.010
+2027.4s train   0.25    26/50: loss: 0.021, top1_error: 0.005, top5_error: 0.000, lr: 0.010
+71.6s   val     1.0     26/50: loss: 1.251, top1_error: 0.190, top5_error: 0.015
+71.6s   val     0.75    26/50: loss: 1.098, top1_error: 0.185, top5_error: 0.010
+71.6s   val     0.5     26/50: loss: 1.189, top1_error: 0.211, top5_error: 0.011
+71.6s   val     0.25    26/50: loss: 1.085, top1_error: 0.210, top5_error: 0.018
+2021.3s train   1.0     27/50: loss: 0.018, top1_error: 0.004, top5_error: 0.000, lr: 0.010
+2021.4s train   0.75    27/50: loss: 0.018, top1_error: 0.003, top5_error: 0.000, lr: 0.010
+2021.4s train   0.5     27/50: loss: 0.018, top1_error: 0.004, top5_error: 0.000, lr: 0.010
+2021.4s train   0.25    27/50: loss: 0.022, top1_error: 0.005, top5_error: 0.000, lr: 0.010
+71.8s   val     1.0     27/50: loss: 2.200, top1_error: 0.357, top5_error: 0.019
+71.8s   val     0.75    27/50: loss: 2.414, top1_error: 0.372, top5_error: 0.019
+71.8s   val     0.5     27/50: loss: 2.635, top1_error: 0.425, top5_error: 0.020
+71.8s   val     0.25    27/50: loss: 3.322, top1_error: 0.484, top5_error: 0.037
+2026.3s train   1.0     28/50: loss: 0.025, top1_error: 0.006, top5_error: 0.000, lr: 0.010
+2026.3s train   0.75    28/50: loss: 0.025, top1_error: 0.005, top5_error: 0.000, lr: 0.010
+2026.4s train   0.5     28/50: loss: 0.024, top1_error: 0.005, top5_error: 0.000, lr: 0.010
+2026.4s train   0.25    28/50: loss: 0.028, top1_error: 0.006, top5_error: 0.000, lr: 0.010
+71.4s   val     1.0     28/50: loss: 0.629, top1_error: 0.055, top5_error: 0.014
+71.4s   val     0.75    28/50: loss: 0.517, top1_error: 0.063, top5_error: 0.012
+71.4s   val     0.5     28/50: loss: 0.638, top1_error: 0.092, top5_error: 0.018
+71.4s   val     0.25    28/50: loss: 0.798, top1_error: 0.126, top5_error: 0.027
+2024.8s train   1.0     29/50: loss: 0.028, top1_error: 0.007, top5_error: 0.001, lr: 0.010
+2024.8s train   0.75    29/50: loss: 0.029, top1_error: 0.007, top5_error: 0.000, lr: 0.010
+2024.9s train   0.5     29/50: loss: 0.026, top1_error: 0.006, top5_error: 0.000, lr: 0.010
+2024.9s train   0.25    29/50: loss: 0.031, top1_error: 0.007, top5_error: 0.000, lr: 0.010
+71.7s   val     1.0     29/50: loss: 0.798, top1_error: 0.116, top5_error: 0.011
+71.7s   val     0.75    29/50: loss: 0.521, top1_error: 0.109, top5_error: 0.008
+71.7s   val     0.5     29/50: loss: 0.563, top1_error: 0.108, top5_error: 0.009
+71.7s   val     0.25    29/50: loss: 0.686, top1_error: 0.140, top5_error: 0.007
+2027.1s train   1.0     30/50: loss: 0.008, top1_error: 0.001, top5_error: 0.000, lr: 0.001
+2027.1s train   0.75    30/50: loss: 0.008, top1_error: 0.001, top5_error: 0.000, lr: 0.001
+2027.2s train   0.5     30/50: loss: 0.007, top1_error: 0.001, top5_error: 0.000, lr: 0.001
+2027.3s train   0.25    30/50: loss: 0.008, top1_error: 0.001, top5_error: 0.000, lr: 0.001
+71.6s   val     1.0     30/50: loss: 0.194, top1_error: 0.011, top5_error: 0.007
+71.6s   val     0.75    30/50: loss: 0.042, top1_error: 0.006, top5_error: 0.003
+71.6s   val     0.5     30/50: loss: 0.082, top1_error: 0.007, top5_error: 0.005
+71.6s   val     0.25    30/50: loss: 0.071, top1_error: 0.008, top5_error: 0.004
+New best validation top1 error: 0.008
+2027.2s train   1.0     31/50: loss: 0.003, top1_error: 0.000, top5_error: 0.000, lr: 0.001
+2027.2s train   0.75    31/50: loss: 0.003, top1_error: 0.000, top5_error: 0.000, lr: 0.001
+2027.3s train   0.5     31/50: loss: 0.003, top1_error: 0.000, top5_error: 0.000, lr: 0.001
+2027.3s train   0.25    31/50: loss: 0.003, top1_error: 0.000, top5_error: 0.000, lr: 0.001
+71.6s   val     1.0     31/50: loss: 0.328, top1_error: 0.012, top5_error: 0.008
+71.6s   val     0.75    31/50: loss: 0.022, top1_error: 0.004, top5_error: 0.002
+71.6s   val     0.5     31/50: loss: 0.035, top1_error: 0.005, top5_error: 0.002
+71.7s   val     0.25    31/50: loss: 0.046, top1_error: 0.006, top5_error: 0.003
+New best validation top1 error: 0.006
+2034.7s train   1.0     32/50: loss: 0.003, top1_error: 0.000, top5_error: 0.000, lr: 0.001
+2034.7s train   0.75    32/50: loss: 0.003, top1_error: 0.000, top5_error: 0.000, lr: 0.001
+2034.7s train   0.5     32/50: loss: 0.003, top1_error: 0.000, top5_error: 0.000, lr: 0.001
+2034.8s train   0.25    32/50: loss: 0.004, top1_error: 0.000, top5_error: 0.000, lr: 0.001
+71.5s   val     1.0     32/50: loss: 0.279, top1_error: 0.011, top5_error: 0.008
+71.5s   val     0.75    32/50: loss: 0.018, top1_error: 0.004, top5_error: 0.002
+71.5s   val     0.5     32/50: loss: 0.042, top1_error: 0.005, top5_error: 0.003
+71.5s   val     0.25    32/50: loss: 0.036, top1_error: 0.006, top5_error: 0.003
+New best validation top1 error: 0.006
+2026.1s train   1.0     33/50: loss: 0.004, top1_error: 0.000, top5_error: 0.000, lr: 0.001
+2026.1s train   0.75    33/50: loss: 0.004, top1_error: 0.000, top5_error: 0.000, lr: 0.001
+2026.2s train   0.5     33/50: loss: 0.004, top1_error: 0.000, top5_error: 0.000, lr: 0.001
+2026.3s train   0.25    33/50: loss: 0.004, top1_error: 0.000, top5_error: 0.000, lr: 0.001
+71.8s   val     1.0     33/50: loss: 0.821, top1_error: 0.140, top5_error: 0.021
+71.8s   val     0.75    33/50: loss: 0.774, top1_error: 0.139, top5_error: 0.017
+71.8s   val     0.5     33/50: loss: 0.690, top1_error: 0.134, top5_error: 0.016
+71.8s   val     0.25    33/50: loss: 0.477, top1_error: 0.123, top5_error: 0.006
+2020.0s train   1.0     34/50: loss: 0.003, top1_error: 0.000, top5_error: 0.000, lr: 0.001
+2020.0s train   0.75    34/50: loss: 0.003, top1_error: 0.000, top5_error: 0.000, lr: 0.001
+2020.1s train   0.5     34/50: loss: 0.003, top1_error: 0.000, top5_error: 0.000, lr: 0.001
+2020.1s train   0.25    34/50: loss: 0.002, top1_error: 0.000, top5_error: 0.000, lr: 0.001
+71.4s   val     1.0     34/50: loss: 0.136, top1_error: 0.009, top5_error: 0.006
+71.4s   val     0.75    34/50: loss: 0.054, top1_error: 0.006, top5_error: 0.004
+71.4s   val     0.5     34/50: loss: 0.076, top1_error: 0.008, top5_error: 0.004
+71.5s   val     0.25    34/50: loss: 0.047, top1_error: 0.006, top5_error: 0.003
+2027.0s train   1.0     35/50: loss: 0.003, top1_error: 0.000, top5_error: 0.000, lr: 0.001
+2027.0s train   0.75    35/50: loss: 0.003, top1_error: 0.000, top5_error: 0.000, lr: 0.001
+2027.1s train   0.5     35/50: loss: 0.003, top1_error: 0.000, top5_error: 0.000, lr: 0.001
+2027.1s train   0.25    35/50: loss: 0.003, top1_error: 0.000, top5_error: 0.000, lr: 0.001
+71.6s   val     1.0     35/50: loss: 0.115, top1_error: 0.008, top5_error: 0.006
+71.7s   val     0.75    35/50: loss: 0.034, top1_error: 0.004, top5_error: 0.002
+71.7s   val     0.5     35/50: loss: 0.024, top1_error: 0.003, top5_error: 0.002
+71.7s   val     0.25    35/50: loss: 0.019, top1_error: 0.004, top5_error: 0.001
+New best validation top1 error: 0.004
+2028.4s train   1.0     36/50: loss: 0.002, top1_error: 0.000, top5_error: 0.000, lr: 0.001
+2028.4s train   0.75    36/50: loss: 0.002, top1_error: 0.000, top5_error: 0.000, lr: 0.001
+2028.5s train   0.5     36/50: loss: 0.002, top1_error: 0.000, top5_error: 0.000, lr: 0.001
+2028.5s train   0.25    36/50: loss: 0.002, top1_error: 0.000, top5_error: 0.000, lr: 0.001
+71.6s   val     1.0     36/50: loss: 0.198, top1_error: 0.011, top5_error: 0.007
+71.6s   val     0.75    36/50: loss: 0.017, top1_error: 0.003, top5_error: 0.001
+71.6s   val     0.5     36/50: loss: 0.017, top1_error: 0.003, top5_error: 0.001
+71.6s   val     0.25    36/50: loss: 0.016, top1_error: 0.004, top5_error: 0.001
+New best validation top1 error: 0.004
+2025.2s train   1.0     37/50: loss: 0.003, top1_error: 0.000, top5_error: 0.000, lr: 0.001
+2025.3s train   0.75    37/50: loss: 0.002, top1_error: 0.000, top5_error: 0.000, lr: 0.001
+2025.3s train   0.5     37/50: loss: 0.002, top1_error: 0.000, top5_error: 0.000, lr: 0.001
+2025.4s train   0.25    37/50: loss: 0.003, top1_error: 0.000, top5_error: 0.000, lr: 0.001
+72.1s   val     1.0     37/50: loss: 0.193, top1_error: 0.011, top5_error: 0.007
+72.1s   val     0.75    37/50: loss: 0.020, top1_error: 0.004, top5_error: 0.002
+72.1s   val     0.5     37/50: loss: 0.022, top1_error: 0.003, top5_error: 0.001
+72.1s   val     0.25    37/50: loss: 0.048, top1_error: 0.007, top5_error: 0.004
+2026.6s train   1.0     38/50: loss: 0.008, top1_error: 0.000, top5_error: 0.000, lr: 0.001
+2026.6s train   0.75    38/50: loss: 0.007, top1_error: 0.000, top5_error: 0.000, lr: 0.001
+2026.7s train   0.5     38/50: loss: 0.007, top1_error: 0.000, top5_error: 0.000, lr: 0.001
+2026.7s train   0.25    38/50: loss: 0.006, top1_error: 0.000, top5_error: 0.000, lr: 0.001
+71.4s   val     1.0     38/50: loss: 0.069, top1_error: 0.007, top5_error: 0.005
+71.4s   val     0.75    38/50: loss: 0.024, top1_error: 0.004, top5_error: 0.002
+71.4s   val     0.5     38/50: loss: 0.016, top1_error: 0.002, top5_error: 0.001
+71.4s   val     0.25    38/50: loss: 0.017, top1_error: 0.003, top5_error: 0.001
+New best validation top1 error: 0.003
+2028.2s train   1.0     39/50: loss: 0.002, top1_error: 0.000, top5_error: 0.000, lr: 0.001
+2028.3s train   0.75    39/50: loss: 0.003, top1_error: 0.000, top5_error: 0.000, lr: 0.001
+2028.3s train   0.5     39/50: loss: 0.003, top1_error: 0.000, top5_error: 0.000, lr: 0.001
+2028.4s train   0.25    39/50: loss: 0.003, top1_error: 0.000, top5_error: 0.000, lr: 0.001
+71.9s   val     1.0     39/50: loss: 0.150, top1_error: 0.008, top5_error: 0.006
+71.9s   val     0.75    39/50: loss: 0.031, top1_error: 0.004, top5_error: 0.002
+71.9s   val     0.5     39/50: loss: 0.037, top1_error: 0.004, top5_error: 0.002
+71.9s   val     0.25    39/50: loss: 0.044, top1_error: 0.006, top5_error: 0.003
+2031.2s train   1.0     40/50: loss: 0.002, top1_error: 0.000, top5_error: 0.000, lr: 0.001
+2031.2s train   0.75    40/50: loss: 0.001, top1_error: 0.000, top5_error: 0.000, lr: 0.001
+2031.3s train   0.5     40/50: loss: 0.001, top1_error: 0.000, top5_error: 0.000, lr: 0.001
+2031.3s train   0.25    40/50: loss: 0.002, top1_error: 0.000, top5_error: 0.000, lr: 0.001
+71.5s   val     1.0     40/50: loss: 0.263, top1_error: 0.009, top5_error: 0.007
+71.5s   val     0.75    40/50: loss: 0.037, top1_error: 0.004, top5_error: 0.003
+71.5s   val     0.5     40/50: loss: 0.050, top1_error: 0.005, top5_error: 0.003
+71.5s   val     0.25    40/50: loss: 0.032, top1_error: 0.005, top5_error: 0.002
+2031.5s train   1.0     41/50: loss: 0.002, top1_error: 0.000, top5_error: 0.000, lr: 0.001
+2031.5s train   0.75    41/50: loss: 0.002, top1_error: 0.000, top5_error: 0.000, lr: 0.001
+2031.5s train   0.5     41/50: loss: 0.002, top1_error: 0.000, top5_error: 0.000, lr: 0.001
+2031.6s train   0.25    41/50: loss: 0.003, top1_error: 0.000, top5_error: 0.000, lr: 0.001
+71.7s   val     1.0     41/50: loss: 0.251, top1_error: 0.012, top5_error: 0.008
+71.7s   val     0.75    41/50: loss: 0.056, top1_error: 0.006, top5_error: 0.004
+71.7s   val     0.5     41/50: loss: 0.064, top1_error: 0.006, top5_error: 0.004
+71.7s   val     0.25    41/50: loss: 0.014, top1_error: 0.003, top5_error: 0.001
+New best validation top1 error: 0.003
+2026.8s train   1.0     42/50: loss: 0.002, top1_error: 0.000, top5_error: 0.000, lr: 0.001
+2026.8s train   0.75    42/50: loss: 0.002, top1_error: 0.000, top5_error: 0.000, lr: 0.001
+2026.9s train   0.5     42/50: loss: 0.001, top1_error: 0.000, top5_error: 0.000, lr: 0.001
+2026.9s train   0.25    42/50: loss: 0.002, top1_error: 0.000, top5_error: 0.000, lr: 0.001
+71.4s   val     1.0     42/50: loss: 0.350, top1_error: 0.013, top5_error: 0.009
+71.4s   val     0.75    42/50: loss: 0.058, top1_error: 0.007, top5_error: 0.004
+71.4s   val     0.5     42/50: loss: 0.096, top1_error: 0.009, top5_error: 0.005
+71.4s   val     0.25    42/50: loss: 0.096, top1_error: 0.012, top5_error: 0.005
+2028.0s train   1.0     43/50: loss: 0.003, top1_error: 0.000, top5_error: 0.000, lr: 0.001
+2028.0s train   0.75    43/50: loss: 0.003, top1_error: 0.000, top5_error: 0.000, lr: 0.001
+2028.1s train   0.5     43/50: loss: 0.003, top1_error: 0.000, top5_error: 0.000, lr: 0.001
+2028.1s train   0.25    43/50: loss: 0.004, top1_error: 0.000, top5_error: 0.000, lr: 0.001
+71.6s   val     1.0     43/50: loss: 0.237, top1_error: 0.012, top5_error: 0.008
+71.6s   val     0.75    43/50: loss: 0.032, top1_error: 0.005, top5_error: 0.002
+71.6s   val     0.5     43/50: loss: 0.051, top1_error: 0.006, top5_error: 0.002
+71.6s   val     0.25    43/50: loss: 0.105, top1_error: 0.010, top5_error: 0.005
+2026.2s train   1.0     44/50: loss: 0.002, top1_error: 0.000, top5_error: 0.000, lr: 0.001
+2026.3s train   0.75    44/50: loss: 0.002, top1_error: 0.000, top5_error: 0.000, lr: 0.001
+2026.3s train   0.5     44/50: loss: 0.002, top1_error: 0.000, top5_error: 0.000, lr: 0.001
+2026.4s train   0.25    44/50: loss: 0.002, top1_error: 0.000, top5_error: 0.000, lr: 0.001
+71.5s   val     1.0     44/50: loss: 0.293, top1_error: 0.012, top5_error: 0.009
+71.5s   val     0.75    44/50: loss: 0.085, top1_error: 0.007, top5_error: 0.004
+71.5s   val     0.5     44/50: loss: 0.060, top1_error: 0.005, top5_error: 0.003
+71.5s   val     0.25    44/50: loss: 0.069, top1_error: 0.006, top5_error: 0.004
+2029.0s train   1.0     45/50: loss: 0.003, top1_error: 0.000, top5_error: 0.000, lr: 0.001
+2029.0s train   0.75    45/50: loss: 0.002, top1_error: 0.000, top5_error: 0.000, lr: 0.001
+2029.1s train   0.5     45/50: loss: 0.002, top1_error: 0.000, top5_error: 0.000, lr: 0.001
+2029.1s train   0.25    45/50: loss: 0.002, top1_error: 0.000, top5_error: 0.000, lr: 0.001
+72.0s   val     1.0     45/50: loss: 0.182, top1_error: 0.008, top5_error: 0.006
+72.0s   val     0.75    45/50: loss: 0.023, top1_error: 0.003, top5_error: 0.001
+72.0s   val     0.5     45/50: loss: 0.026, top1_error: 0.003, top5_error: 0.002
+72.0s   val     0.25    45/50: loss: 0.045, top1_error: 0.005, top5_error: 0.003
+2030.1s train   1.0     46/50: loss: 0.002, top1_error: 0.000, top5_error: 0.000, lr: 0.001
+2030.1s train   0.75    46/50: loss: 0.003, top1_error: 0.000, top5_error: 0.000, lr: 0.001
+2030.2s train   0.5     46/50: loss: 0.002, top1_error: 0.000, top5_error: 0.000, lr: 0.001
+2030.2s train   0.25    46/50: loss: 0.002, top1_error: 0.000, top5_error: 0.000, lr: 0.001
+71.5s   val     1.0     46/50: loss: 0.140, top1_error: 0.016, top5_error: 0.006
+71.5s   val     0.75    46/50: loss: 0.027, top1_error: 0.010, top5_error: 0.000
+71.5s   val     0.5     46/50: loss: 0.037, top1_error: 0.012, top5_error: 0.000
+71.5s   val     0.25    46/50: loss: 0.063, top1_error: 0.019, top5_error: 0.002
+2025.4s train   1.0     47/50: loss: 0.002, top1_error: 0.000, top5_error: 0.000, lr: 0.001
+2025.4s train   0.75    47/50: loss: 0.002, top1_error: 0.000, top5_error: 0.000, lr: 0.001
+2025.5s train   0.5     47/50: loss: 0.002, top1_error: 0.000, top5_error: 0.000, lr: 0.001
+2025.6s train   0.25    47/50: loss: 0.002, top1_error: 0.000, top5_error: 0.000, lr: 0.001
+71.8s   val     1.0     47/50: loss: 0.328, top1_error: 0.011, top5_error: 0.008
+71.8s   val     0.75    47/50: loss: 0.056, top1_error: 0.005, top5_error: 0.004
+71.8s   val     0.5     47/50: loss: 0.032, top1_error: 0.004, top5_error: 0.002
+71.8s   val     0.25    47/50: loss: 0.030, top1_error: 0.004, top5_error: 0.003
+2017.9s train   1.0     48/50: loss: 0.002, top1_error: 0.000, top5_error: 0.000, lr: 0.001
+2018.0s train   0.75    48/50: loss: 0.002, top1_error: 0.000, top5_error: 0.000, lr: 0.001
+2018.0s train   0.5     48/50: loss: 0.002, top1_error: 0.000, top5_error: 0.000, lr: 0.001
+2018.0s train   0.25    48/50: loss: 0.002, top1_error: 0.000, top5_error: 0.000, lr: 0.001
+71.3s   val     1.0     48/50: loss: 1.342, top1_error: 0.193, top5_error: 0.023
+71.3s   val     0.75    48/50: loss: 1.014, top1_error: 0.195, top5_error: 0.018
+71.3s   val     0.5     48/50: loss: 1.054, top1_error: 0.208, top5_error: 0.018
+71.3s   val     0.25    48/50: loss: 1.191, top1_error: 0.243, top5_error: 0.031
+2022.7s train   1.0     49/50: loss: 0.002, top1_error: 0.000, top5_error: 0.000, lr: 0.001
+2022.7s train   0.75    49/50: loss: 0.002, top1_error: 0.000, top5_error: 0.000, lr: 0.001
+2022.8s train   0.5     49/50: loss: 0.002, top1_error: 0.000, top5_error: 0.000, lr: 0.001
+2022.8s train   0.25    49/50: loss: 0.002, top1_error: 0.000, top5_error: 0.000, lr: 0.001
+71.6s   val     1.0     49/50: loss: 0.201, top1_error: 0.009, top5_error: 0.007
+71.6s   val     0.75    49/50: loss: 0.040, top1_error: 0.004, top5_error: 0.003
+71.7s   val     0.5     49/50: loss: 0.031, top1_error: 0.003, top5_error: 0.002
+71.7s   val     0.25    49/50: loss: 0.050, top1_error: 0.005, top5_error: 0.004
